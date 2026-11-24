@@ -1,0 +1,72 @@
+# ARTEX-Global Termux Adaptation - Git Ignore
+# Only track the adaptation scripts and docs, not runtime data
+
+# Runtime data (contains passwords, API keys, session data)
+/artex-data/
+!/artex-data/skills/termux-netdiscover/
+
+# Built binaries
+/artex-global/artex
+/artex-global/artex.exe
+
+# Frontend build output
+/artex-global/web/out/
+/artex-global/web/.next/
+/artex-global/server/webui/dist/
+
+# Go build cache
+/artex-global/dist/
+
+# Node modules
+/artex-global/web/node_modules/
+
+# Logs
+*.log
+/artex-data/postgres.log
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+
+# Backups
+/backups/
+
+# Environment files with secrets
+.env
+.env.local
+.env.*.local
+
+# Config with actual passwords (use config.example.json instead)
+/artex-data/config.json
+
+# JWT keys
+*.key
+jwt.key
+
+# SSL/Certificates
+*.pem
+*.crt
+*.key
+
+# Database
+*.db
+*.sqlite
+postgres/
+
+# Coverage/Profiling
+coverage.out
+*.prof
+
+# Test outputs
+/test-output/

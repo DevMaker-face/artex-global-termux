@@ -1,0 +1,12 @@
+{
+  "database": {
+    "host": "127.0.0.1",
+    "port": 5432,
+    "user": "artex",
+    "password": "CHANGE_ME",
+    "dbname": "artex",
+    "sslmode": "disable"
+  },
+  "skill_dir": "/data/data/com.termux/files/home/artex-data/skills",
+  "language": "en"
+}
